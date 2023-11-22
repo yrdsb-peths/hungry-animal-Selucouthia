@@ -19,8 +19,8 @@ public class BrownBear extends Actor
             move(1);
         }
         eat;
-    }
-    
+}
+
     public void eat()
     {
         if(isTouching(Strawberries.class))
