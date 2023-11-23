@@ -21,6 +21,14 @@ public class MyWorld extends World
         BrownBear brownbear = new BrownBear();
         addObject(brownbear, 300, 300);
         
-        Berry strawberries = new Berry();
+        createBerry();
+    }
+    
+    public void createBerry()
+    {
+        Berry berry = new Berry();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(berry, x, y);
     }
 }

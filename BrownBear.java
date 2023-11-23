@@ -15,21 +15,24 @@ public class BrownBear extends Actor
     public void act()
     {
         // Add your action code here.
-        if(Greenfoot.isKeyDown("a"))
+        if(Greenfoot.isKeyDown("left"))
         {
             move(-2);
         }
-        if(Greenfoot.isKeyDown("d"))
+        if(Greenfoot.isKeyDown("right"))
         {
             move(2);
         }
+        Eat();
     }
     
-    public void eat()
+    public void Eat()
     {
         if(isTouching(Berry.class))
         {
             removeTouching(Berry.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.crea teBerry();
         }
     }
 }
