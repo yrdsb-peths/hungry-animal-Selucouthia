@@ -32,7 +32,8 @@ public class BrownBear extends Actor
         {
             removeTouching(Berry.class);
             MyWorld world = (MyWorld) getWorld();
-            world.crea teBerry();
+            world.createBerry();
+            world.increaseScore();
         }
     }
 }
