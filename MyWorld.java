@@ -22,8 +22,9 @@ public class MyWorld extends World
         BrownBear brownbear = new BrownBear();
         addObject(brownbear, 300, 300);
         
+        
         scoreLabel = new Label(0, 70);
-        addObject(scoreLabel, 30, 40);
+        addObject(scoreLabel, 40, 40);
           
         createBerry();
     }
