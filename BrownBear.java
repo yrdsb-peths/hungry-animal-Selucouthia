@@ -70,6 +70,12 @@ public class BrownBear extends Actor
             move(2);
             facing = "right";
         }
+        if(Greenfoot.isKeyDown("up")){
+            setLocation(getX(), getY() - 2); 
+        }
+        if(Greenfoot.isKeyDown("down")){
+            setLocation(getX(), getY() + 2); 
+        }
         Eat();
         animatedBear();
     }
